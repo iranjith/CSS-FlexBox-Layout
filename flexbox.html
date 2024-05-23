@@ -36,15 +36,33 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* FLEXBOX */
 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+
         /* align-items: flex-start; */
         
+      }
+
+      .el--1{
+        align-self: flex-start;
+      }
+      .el--5{
+        align-self: stretch;
+      }
+      .el--6{
+        order:1;
+      }
+      .el{
+
+        /* margin-right: 30px; */
       }
     </style>
   </head>
@@ -56,8 +74,6 @@
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
       <div class="el el--6">languages</div>
-      <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
     </div>
   </body>
 </html>
