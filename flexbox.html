@@ -44,25 +44,34 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-end;
-        gap: 30px;
+        justify-content: flex-start;
+
+        /* gap: 30px; */
 
         /* align-items: flex-start; */
-        
+      }
+      .el {
+        /* DEFAULTS  
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto; */
+
+        /* flex-basis: 400px; */
+        /* flex-shrink: 0;
+        flex-grow: 1; */
+        flex:1
       }
 
-      .el--1{
-        align-self: flex-start;
+      .el--1 {
+        /* align-self: flex-start; */
+        flex-grow: 1;
       }
-      .el--5{
+      .el--5 {
         align-self: stretch;
+        order:1
       }
-      .el--6{
-        order:1;
-      }
-      .el{
-
-        /* margin-right: 30px; */
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
@@ -73,7 +82,7 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
+      <!-- <div class="el el--6">languages</div> -->
     </div>
   </body>
 </html>
